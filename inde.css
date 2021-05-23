@@ -1,50 +1,203 @@
-body {
-    font-family: "Lato", sans-serif;
+.navbar {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
 }
-
-.sidenav {
-    height: 100%;
-    width: 0;
+.navbar {
+   
+    top: 0;
+    max-height: 50px;
+   transition: top 0.3s;
+}
+.fixed-top {
     position: fixed;
-    z-index: 1;
     top: 0;
+    right: 0;
     left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 90px;
+    z-index: 1030;
+
+}
+.bg-white {
+    background-color: rgb(247, 245, 245);
+
+}
+.navbar-expand {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symol";
+    font-size: .9375rem;
+    font-weight: 4000;
+    line-height: 1.5;
+    color: #f6f9fc;
+    text-align: left;
+    background-color: rgb(102, 143, 167);
 }
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  
+  .column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(85, 82, 82, 0.2);
+    margin:0px;
+    padding: 1px;
+  }
+  .card img {
+      border-radius: 5px;
+      width: auto;
+      height: 250px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    
+    
+    color: rgb(245, 237, 237);
+  }
+  
+  /* .container {
+    padding: 0 16px;
+  } */
+  
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background: linear-gradient(80deg, yellow, green);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  
+  .row {
+     justify-content: center;
+     align-items: center; 
+     padding: 0 40px;
+     background-color: rgba(202, 240, 187, 0.021);
+  }
+  
+  @media screen and (max-width: 550px) {
+    .column {
+      width: 90%;
+      display: block;
+    }
+    .navbar-nav input {
+        display: none;
+    }
+  }
+#yuzi_3_17_2_1_1621482544818_1133 {
+    background-color:rgb(194, 186, 186);
 }
 
-.sidenav a:hover {
-    color: #f1f1f1;
+body {
+   
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
 }
+@media (min-width: 551px ) and (max-width: 800px) {
+    .column{
+        width: 50%;
+    }
+    .card img {
+        height: 200px;
+    }
+    .navbar-nav input {
+        display: none;
+    }
 
-.sidenav .closebtn {
+}
+@media (min-width: 801px) and (max-width: 1200px) {
+    .column{
+        width: 33.3%;
+    }
+    .card img {
+        height: 180px;
+    }
+}
+ul li i {
+    margin-left: 5px;
+    font-size:1.1rem;
+}
+ul li input {
+    padding-right: 5px;
+}
+ul li {
+  
+    margin: 0 10px;
+}
+.line {
+    width: 30px;
+    height: 2px;
+    border: 3px;
+    background: rgb(105, 67, 67);
+    margin: 5px;
+}
+nav {
+    position: relative;
+}
+.burger {
     position: absolute;
-    padding-top: 60px;
-    top: 0;
-    right: 10px;
-    font-size: 30px;
-    margin-left: 50px;
-}
-.openbtn {
-  font-size: 20px;
-}
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
+    cursor: pointer;
+    top: 10%;
+    transform: translate(5%, 10%);
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+@media (max-width: 1900px) {
+    .senter {
+        display: flex;
+    }
+    .leftt {
+        width: 200px;
+        display: none;
+        padding-left: 1%;
+        flex-direction: column;
+        background: rgb(115, 206, 186);
+        clip-path:fill-box(100px at 90% 20%);
+        -webkit-clip-path: fill-box(300px at 90% 20%);
+        transition: all 1s ease-out;
+        z-index: 4;
+        height: 120vh;
+        
+       
+    }
+    .leftt.open {
+        clip-path:fill-box(100px at 90% 20%);
+        -webkit-clip-path:fill-box(500px at 90% 20%);
+        display: block;
+        
+
+    }
 }
